@@ -19,7 +19,7 @@ body{
     width: 100vw;
     scroll-behavior: smooth;
     margin: auto;
-    position:relative;
+
 }
 
     
@@ -47,7 +47,12 @@ body{
     text-align:left;
     color:white;
     line-height: 4rem;
+    transition: .2s ease-in-out;
     
+}
+
+.intro:hover{
+    transform: scale(1.1);
 }
 
 .intro h1:nth-child(1){
@@ -55,12 +60,23 @@ body{
     
 }
 
+
 .intro h1{
     font-weight: 400;
+    
 }
+
+
 
 .intro span{
     font-size:1.5rem;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.intro span:hover{
+    font-size: 2rem;
+    text-decoration: underline;
 }
 
 /* ############################## black-box-section ######################## */
@@ -94,6 +110,14 @@ body{
     width:300px;
     height: 350px;
     border-radius: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .2s ease-in;
+}
+
+.cards:hover{
+    transform: scale(1.04);
+    box-shadow:10px 10px 40px rgba(0, 0, 0, 0.24);
 }
 
 .cards .image{
@@ -136,17 +160,71 @@ body{
     padding:2rem;
     gap: 4rem;
     color:white;
-    position: absolute;
-    bottom:0;
+    font-size: .65rem;
+    line-height: 2rem;
+    
     
 }
 .contact{
     background-color: #4d5f00;
-    width: fit-content;
-    font-size: .8rem;
-    font-weight: 400;
+    width: 50%;
+    padding:2rem;
+    padding-bottom: 5rem;   
 }
 .about{
     background-color: #761c00;
-    width: fit-content;
+    width: 50%;
+    padding:2rem;
+    padding-bottom: 5rem;
 }
+
+.contact-about h1{
+    font-weight: 500;
+    font-size:3rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* ############################## Media Query ######################## */
+
+@media only screen and (max-width: 600px) {
+    
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+
+    .contact-about{
+        flex-direction: column;
+        gap:0;
+        padding:0;
+    }
+
+    .contact,.about{
+        width:100%;
+        padding-bottom: 1rem;
+    }
+
+    .contact-about h1{
+        font-size:2rem;
+    }
+
+    .intro{
+        user-select: none;
+    }
+
+    .intro:hover{
+        transform: scale(1);
+    }
+
+
+
+    .intro span:hover{
+        font-size:1.5rem;
+    }
+
+  }
