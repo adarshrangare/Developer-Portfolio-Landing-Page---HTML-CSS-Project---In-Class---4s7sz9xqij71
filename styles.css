@@ -215,12 +215,19 @@ body{
     }
 
     .intro{
+        text-align: center;
         user-select: none;
     }
+    
+    .intro h1{
+        font-size:2.5rem;
+    }
+
 
     .intro:hover{
         transform: scale(1);
     }
+
 
 
 
