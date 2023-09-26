@@ -1,1 +1,152 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    font-size: 16px;
+    margin: auto;
+}
+
+.container{
+    max-width:1440px;
+    width: 100vw;
+    scroll-behavior: smooth;
+    margin: auto;
+    position:relative;
+}
+
+    
+/* ############################## hero-section ######################## */
+
+
+.hero-section{
+
+    height: 100vh;
+    width:100%;
+    background: url(https://www.freecodecamp.org/news/content/images/size/w1000/2021/10/faizur-rehman-pHPzdEHN6Os-unsplash.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.intro{
+    padding-top:4rem;
+    padding-left: 1rem;
+    width:fit-content;
+    height: fit-content;
+    font-size: 1.8rem;
+    margin:auto;
+    text-align:left;
+    color:white;
+    line-height: 4rem;
+    
+}
+
+.intro h1:nth-child(1){
+    display: inline;
+    
+}
+
+.intro h1{
+    font-weight: 400;
+}
+
+.intro span{
+    font-size:1.5rem;
+}
+
+/* ############################## black-box-section ######################## */
+
+.black-box-section{
+    width:100%;
+    text-align: center;
+    background-color: black;
+    color:white;
+    font-size:3rem;
+}
+
+.black-box-section p span{
+    font-size: 4rem;
+}
+
+/* ############################## card-container-section ######################## */
+
+.card-container{
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:4rem;
+    width: 80%;
+    padding: 2rem ;
+    justify-items: center;
+    margin: auto;
+}
+
+.cards{
+    box-shadow:2px 2px 5px rgba(0, 0, 0, 0.426);
+    width:300px;
+    height: 350px;
+    border-radius: 1rem;
+}
+
+.cards .image{
+    width:100%;
+    height:45%;
+}
+.card1 .image, .card3 .image {    
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--KukFYgdM--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3hj8h7sbyqbl73786wom.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card2 .image{    
+    background-image: url(https://miro.medium.com/v2/resize:fit:1100/0*mfUNFSHyrXnH7ZKf);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cards .desc{
+    padding: 1rem 0.5rem 4rem 1rem;
+}
+
+.desc .heading{
+    font-weight: 600;
+    margin-bottom:.5rem;
+}
+
+.desc p:nth-last-child(1){
+    font-size:0.9rem;
+}
+    
+
+
+/* ############################## contact-about-section ######################## */
+
+.contact-about{
+    display: flex;
+    justify-content: space-between;
+    padding:2rem;
+    gap: 4rem;
+    color:white;
+    position: absolute;
+    bottom:0;
+    
+}
+.contact{
+    background-color: #4d5f00;
+    width: fit-content;
+    font-size: .8rem;
+    font-weight: 400;
+}
+.about{
+    background-color: #761c00;
+    width: fit-content;
+}
